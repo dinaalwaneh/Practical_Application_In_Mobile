@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="Assignment3.MainPage">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center"  >
+
+        <Button Text="Show years from 1990-2030"
+                Clicked="DisplayYears" 
+                android:Button.UseDefaultPadding="true"
+                android:Button.UseDefaultShadow="true"
+                BorderColor="Black"
+                BorderWidth="0.5"/>
+        
+        <ScrollView HeightRequest="210">
+            <Label x:Name="Years" HorizontalOptions="Center" TextColor="Black" ></Label>
+        </ScrollView >
+   
+    </StackLayout>
+
+</ContentPage>
