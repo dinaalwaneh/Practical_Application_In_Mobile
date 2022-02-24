@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="App9.Page2">
+
+    <ContentPage.Content>
+        <StackLayout   HorizontalOptions="Center" VerticalOptions="Start" Padding="10,30,10,50">
+
+            <StackLayout Orientation="Horizontal">
+                <Label FontAttributes="Bold, Italic"
+                       Text="Name : "
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Medium"
+                       TextColor="#000000"/>
+
+                <Label  
+                       FontFamily="Italic"
+                       Text="Dina Bader Alwaneh ."
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Small"
+                       TextColor="#000000"
+                       Style="{DynamicResource BodyStyle}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontAttributes="Bold, Italic"
+                       Text="BirthDate : "
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Medium"
+                       TextColor="#000000"/>
+
+                <Label FontAttributes="Italic"
+                       Text="14-1-2002 ."
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Small"
+                       TextColor="#000000"
+                       Style="{DynamicResource BodyStyle}"
+                       
+                       />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontAttributes="Bold, Italic"
+                       Text="Gender : "
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Medium"
+                       TextColor="#000000"/>
+
+                <Label FontAttributes=" Italic"
+                       Text="Female ."
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Small"
+                       TextColor="#000000"
+                       Style="{DynamicResource BodyStyle}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  
+FontAttributes="Bold, Italic"
+                         Text="Specialization : "
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Medium"
+                       TextColor="#000000"/>
+
+                <Label   FontAttributes="Italic"
+                       Text="Computer science apprenticeship."
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Small"
+                       TextColor="#000000"
+                       Style="{DynamicResource BodyStyle}"
+                       />
+            </StackLayout>
+            <ContentView >
+                <StackLayout   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Margin="30">
+
+                    <Frame
+                    HorizontalOptions="End"
+                    Grid.Column="2"
+                    Padding="0"
+                    Grid.Row="0">
+
+                        <Button 
+                    Text="Done"
+                    BackgroundColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    Clicked="Button_Clicked"
+                    TextColor="Black"
+                    BorderColor="AliceBlue"
+                    BorderWidth="3"
+                                   />
+                    </Frame>
+                </StackLayout>
+            </ContentView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

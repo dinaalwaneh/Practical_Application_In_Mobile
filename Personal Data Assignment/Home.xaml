@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="App9.Page1"
+             >
+    <ContentView >
+        <StackLayout   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+            <Frame
+                    HorizontalOptions="End"
+                    Grid.Column="2"
+                    Padding="0"
+                    Grid.Row="0">
+
+                <Button 
+                    Text="view my information"
+                    BackgroundColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="Button_Clicked"
+                    TextColor="Black"
+                    BorderColor="AliceBlue"
+                    BorderWidth="3"
+                                   />
+            </Frame>
+        </StackLayout>
+        </ContentView>
+
+</ContentPage>
