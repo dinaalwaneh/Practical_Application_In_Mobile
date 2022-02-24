@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.MainPage" >
+    <StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="dateLabel" HorizontalOptions="CenterAndExpand" Margin="0,0,60,0" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Dina Alwaneh" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+            
+            <Button Text="Zajel"  Padding="60,0,60,0"
+                    HorizontalOptions="CenterAndExpand"
+                    BorderWidth="0.5"
+                    BorderColor="Black"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Yellow"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="Zajel"/>
+            
+            <Button Text="Google" Padding="50,0,50,0"
+                    HorizontalOptions="CenterAndExpand"
+                    BorderWidth="0.5"
+                    BorderColor="Black"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Yellow"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="Google"/>
+            
+        </StackLayout>
+  
+        <StackLayout Margin="20,10,20,20">
+            <Label x:Name="labelLoading" Text="Loading..." IsVisible="false" />
+            <WebView x:Name="NajahPage" HeightRequest="1000" WidthRequest="1000" Source="https://www.najah.edu/ar/?fbclid=IwAR1svbarfYbQze9NlN5J2mcIypofPDREZeispRtEH0J5qLQRA20QklmjQq4" IsVisible="true" Navigated="webviewNavigated" Navigating="webviewNavigating" />
+        
+            <!--Display Pages in the same page :*/-->
+            <WebView x:Name="GooglePage" HeightRequest="1000" WidthRequest="1000" Source="https://www.Google.com" IsVisible="false" />
+            <WebView x:Name="ZajelPage" HeightRequest="1000" WidthRequest="1000" Source="https://zajel.najah.edu" IsVisible="false" />
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
